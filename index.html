@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Евклид</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -13,45 +17,61 @@
   <header class="header">
     <h1 class="visually-hidden">Проектные системы Евклид</h1>
     <div class="container">
-      <a class="header__logo" href="">
-        <img src="img/header-logo.svg" alt="Логотип Евклид">
-      </a>
-      <ul class="header__list">
-        <li class="header__item">
-          <a class="header__link" href="">О нас</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="">Проекты</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="">Этапы</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="">Отзывы</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="">Контакты</a>
-        </li>
-      </ul>
+      <div class="header__wrapper">
+        <a class="header__logo" href="">
+          <img src="img/header-logo.svg" alt="Логотип Евклид">
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Проекты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Этапы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__search" href="">
+          <svg class="header__search-icon" width="24" height="24" viewbox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect class="handle" width="7.56126" height="1.89031"
+              transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333" />
+            <path class="circle"
+              d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+              stroke="#333333" stroke-width="2" />
+          </svg>
+        </a>
+      </div>
     </div>
   </header>
 
   <main class="main">
 
-    <section class="hero container">
-      <div class="hero__wrapper">
-        <p class="hero__title">
-          Проектные решения любой сложности
-        </p>
-        <p class="hero__subtitle">
-          Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-        </p>
-        <a class="hero__button" href="">Заказать расчет</a>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <p class="hero__title">
+            Проектные решения любой сложности
+          </p>
+          <p class="hero__subtitle">
+            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+          </p>
+          <a class="hero__button link" href="">Заказать расчет</a>
+        </div>
       </div>
     </section>
 
     <section class="about container">
-      <h2 class="about__title">О нас</h2>
+      <h2 class="about__title title_big">О нас</h2>
       <p class="about__description">
         Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда
         внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А
@@ -64,14 +84,17 @@
       </p>
       <div class="about__wrapper">
         <div class="about__column column-wrap">
-          <p class="column-wrap__text">
-            Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации
-            новых принципов.
-          </p>
-          <a class="column-wrap__button" href=""></a>
+          <div class="column-wrap__box">
+            <p class="column-wrap__text">
+              Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и
+              реализации
+              новых принципов.
+            </p>
+            <a class="column-wrap__button link" href="">Подробнее</a>
+          </div>
         </div>
         <div class="about__column column-row">
-          <div class="column-row__wrapper">
+          <div class="column-row__wrapper column-row__wrapper_top ">
             <h3 class="column-row__title">
               Консультация с широким активом
             </h3>
@@ -94,7 +117,7 @@
     </section>
 
     <section class="works container">
-      <h2 class="works__title">Как мы работаем</h2>
+      <h2 class="works__title title_big">Как мы работаем</h2>
       <ul class="works__list">
         <li class="works__item">
           <a class="works__item-link" href="">1 шаг</a>
@@ -131,7 +154,7 @@
     </section>
 
     <section class="faq container">
-      <h2 class="faq__title">Часто задаваемые вопросы</h2>
+      <h2 class="faq__title title_big">Часто задаваемые вопросы</h2>
       <ul class="faq__list">
         <li class="faq__item">
           <a class="faq__item-link" href="">Из чего формируется конечная стоимость проекта?</a>
@@ -205,7 +228,7 @@
       <div class="footer__wrapper">
         <form class="footer-form" action="">
           <p class="footer-form__title">Оставить заявку</p>
-          <input type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*" required autofocus>
+          <input type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*" required>
           <input type="email" name="email" id="email" placeholder="E-mail*" required>
           <textarea type="text" name="comment" placeholder="Сообщение"></textarea>
 
