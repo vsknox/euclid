@@ -24,23 +24,33 @@
         <nav class="header__nav nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__link link" href="#about">О нас</a>
+              <a class="nav__link link" href="#about">
+                <span class="nav__text">О нас</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="">Проекты</a>
+              <a class="nav__link link" href="">
+                <span class="nav__text">Проекты</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="#works">Этапы</a>
+              <a class="nav__link link" href="#works">
+                <span class="nav__text">Этапы</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="">Отзывы</a>
+              <a class="nav__link link" href="">
+                <span class="nav__text">Отзывы</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="#contacts">Контакты</a>
+              <a class="nav__link link" href="#contacts">
+                <span class="nav__text">Контакты</span>
+              </a>
             </li>
           </ul>
         </nav>
-        <a class="header__search" href="">
+        <a class="header__search link" href="">
           <svg class="header__search-icon" width="24" height="24" viewbox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect class="handle" width="7.56126" height="1.89031"
@@ -72,11 +82,11 @@
           <li class="hero__slider-item">
             <button class="hero__slider-button" type="button" aria-lable="Первый слайд"></button>
           </li>
-          <li class="herow__slider-item">
+          <li class="hero__slider-item">
             <button class="hero__slider-button hero__slider-button--disabled" type="button"
               aria-lable="Второй слайд"></button>
           </li>
-          <li class="herow__slider-item">
+          <li class="hero__slider-item">
             <button class="hero__slider-button hero__slider-button--disabled" type="button"
               aria-lable="Третий слайд"></button>
           </li>
@@ -237,7 +247,7 @@
     <section class="faq container">
       <h2 class="faq__title title_big">Часто задаваемые вопросы</h2>
       <ul class="faq__list list">
-        <li class="faq__item faq__item--top">
+        <li class="faq__item">
           <a class="faq__item-link link" href="">
             <p class="faq__item-text">
               Из чего формируется конечная стоимость проекта?
@@ -309,7 +319,7 @@
             </svg>
           </a>
         </li>
-        <li class="faq__item faq__item--last">
+        <li class="faq__item">
           <a class="faq__item-link link" href="">
             <p class="faq__item-text">
               Могу ли я вернуть деньги на каком-либо из этапов работ?
@@ -412,7 +422,7 @@
 
           <div class="footer-form__wrap">
             <button class="footer-form__button" type="submit">Отправить данные</button>
-            <input class="custom-checkbox" type="checkbox" id="subscribe-field" name="subscribe" checked>
+            <input class="custom-checkbox visually-hidden" type="checkbox" id="subscribe-field" name="subscribe" checked>
             <label class="footer-form__agree" for="subscribe-field">Согласен на обработку данных</label>
           </div>
         </form>
